@@ -1,0 +1,85 @@
+/* Imports */
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Anton&&family=Quicksand&display=swap');
+
+
+/* Variables */
+:root {
+    --hero-font: 'Quicksand', Arial, Helvetica, sans-serif;
+    --body-font: 'Anton', Arial, Helvetica, sans-serif;
+}
+
+/* Body Styles*/
+body {
+    font-family: var(--body-font);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Title Header */
+h1 {
+    margin: .5em auto;
+    font-size: 3em;
+}
+
+/* Hero Image */
+/* working off a w3schools guide */
+
+.hero-img {
+    height: 10em;
+    background-image: url("cliufqx.jpg");
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* I looked up these properties and they make sense to me, but it feels like there shoudl be an easier way to do this - like leaving the image on html */
+    position: relative;
+}
+
+.hero-text {
+    font-family: var(--hero-font);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    /* I understand absolut/relative though it seems intuitively they should be switched */
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    /* I looked up transform: translate and I guess I understand what's happening here. I don't really understand why I couldn't just do text-align and text-justify */
+}
+
+/* Flexbox rules */
+.game-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tools {
+    /* flex-basis: auto; */
+    flex: 1 1 0;
+    /* ^^^ this is shorthand for flex-grow, flex-shrink, flex-basis - in that order */
+}
+
+/* Wallet and Button styles */
+.wallet {
+    font-size: 2em;
+    line-height: .5em
+}
+
+button {
+    width: 100%;
+    height: 3em;
+}
+
+.mow-lawns {
+    height: 6em;
+}
+
+.grey {
+    color: #999;
+}
