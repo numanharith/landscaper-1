@@ -83,3 +83,14 @@ button {
 .grey {
     color: #999;
 }
+
+@media (max-width: 450px) {
+    .mow-lawns, button {
+	height: 4em;
+	font-size: 1.5em;
+    }
+    .wallet {
+        height: 4em;
+    }
+}
+
